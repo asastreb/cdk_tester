@@ -1,0 +1,34 @@
+{
+  "version": "14.0.0",
+  "files": {
+    "31cc90e99fd278c548319a32966eea5ce0484bb3155a6b7b4befcf43a28f76dc": {
+      "source": {
+        "path": "PanionDsInfraCdkStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "970716166473-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-970716166473-eu-central-1",
+          "objectKey": "31cc90e99fd278c548319a32966eea5ce0484bb3155a6b7b4befcf43a28f76dc.json",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::970716166473:role/cdk-hnb659fds-file-publishing-role-970716166473-eu-central-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {
+    "2efe95237b838f427ccd9a8d8198db3b29f11951bfa4819ad568acc49005aa84": {
+      "source": {
+        "directory": "asset.2efe95237b838f427ccd9a8d8198db3b29f11951bfa4819ad568acc49005aa84"
+      },
+      "destinations": {
+        "970716166473-eu-central-1": {
+          "repositoryName": "cdk-hnb659fds-container-assets-970716166473-eu-central-1",
+          "imageTag": "2efe95237b838f427ccd9a8d8198db3b29f11951bfa4819ad568acc49005aa84",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::970716166473:role/cdk-hnb659fds-image-publishing-role-970716166473-eu-central-1"
+        }
+      }
+    }
+  }
+}

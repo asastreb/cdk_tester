@@ -1,0 +1,20 @@
+{
+  "version": "15.0.0",
+  "files": {
+    "dde15bdcb3d7875ecffe03e1ac9957b5afc0616ca2a9708959b94d8701296ce9": {
+      "source": {
+        "path": "PipelinePanionDsInfrastrucureCdkStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "123456789012-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-123456789012-eu-central-1",
+          "objectKey": "dde15bdcb3d7875ecffe03e1ac9957b5afc0616ca2a9708959b94d8701296ce9.json",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::123456789012:role/cdk-hnb659fds-file-publishing-role-123456789012-eu-central-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

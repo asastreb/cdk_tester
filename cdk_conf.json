@@ -1,0 +1,27 @@
+{
+  "github_owner": "asastreb",
+  "github_project": "panion-ds-infra-cdk",
+  "aws_account_id": "123456789012",
+  "aws_region": "eu-central-1",
+  "s3buckets": [
+    {
+      "bucket_name":  "bucket1",
+      "envs": {
+        "dev": {
+          "auto_delete_objects": true,
+          "versioned": false,
+          "expiration_time_hours": 24
+        },
+        "staging": {
+          "auto_delete_objects": true,
+          "versioned": false,
+          "expiration_time_hours": 24
+        },
+        "prod": {
+          "auto_delete_objects": false,
+          "versioned": true
+        }
+      }
+    }
+  ]
+}
