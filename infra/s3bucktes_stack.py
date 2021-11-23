@@ -13,8 +13,8 @@ class S3BucketsStack(cdk.Stack):
             self, scope: cdk.Construct, construct_id: str, **kwargs
     ) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        source_bucket1 = s3.Bucket(self, "bucket1",bucket_name="dev-bucket1-panion")
-        source_bucket2 = s3.Bucket(self, "bucket2",bucket_name="prod-bucket1-panion")
+        for num in ["one", "two", "three"]:
+            source_bucket1 = s3.Bucket(self, f"bucket_{num}",bucket_name=f"dev-bucket-{num}-panion")
 #        conf = get_conf()
 #        if "s3buckets" in conf:
 #            bucket_confs = conf.get("s3buckets")
