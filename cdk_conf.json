@@ -1,7 +1,7 @@
 {
   "github_owner": "asastreb",
-  "github_project": "panion-ds-infra-cdk",
-  "aws_account_id": "123456789012",
+  "github_project": "cdk_tester",
+  "aws_account_id": "970716166473",
   "aws_region": "eu-central-1",
   "s3buckets": [
     {
