@@ -5,7 +5,7 @@
   "aws_region": "eu-central-1",
   "s3buckets": [
     {
-      "bucket_name":  "bucket1",
+      "bucket_name":  "sbucket1",
       "envs": {
         "dev": {
           "auto_delete_objects": true,
