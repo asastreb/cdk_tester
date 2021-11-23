@@ -4,7 +4,7 @@ import os
 
 
 def get_conf():
-    conf_path = os.path.join(pathlib.Path.cwd().parent, "cdk_conf.json")
+    conf_path = os.path.join(pathlib.Path.cwd(), "cdk_conf.json")
 
     assert os.path.isfile(conf_path), f"cdk_conf.json file not found in {conf_path}"
 
